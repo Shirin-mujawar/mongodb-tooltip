@@ -1,0 +1,30 @@
+<div style="background-size: contain; background-color: indianred;">
+  <div style="font-size: xx-large; color: rgb(0, 89, 130); margin-left: 300px;">
+    <br>
+    <a routerLink="/tooltip-details">Details</a>
+
+  </div>
+  <div style="font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: x-large; background-color:cadetblue; text-decoration-style:dotted; white-space: pre-line;">
+
+    <div style="margin-left: 200px">
+      <h3 style="background-position: center; color:green;">Edit Student-details</h3>
+
+     <div  style="margin-left: 200px">
+      <Label>Column Name: </Label>
+      <input    style="height:25px;margin-left: 41px;" type="text" [(ngModel)]="tooltipData[0].columnName" >
+    </div>
+     <div  style="margin-left: 200px">
+      <Label style = "margin-top: 100px;">Tooltip: </Label>
+      </div><div>
+    <textarea id="w3review" name="w3review" style = "margin-left: 300px;" rows="8"  cols="50" [(ngModel)]="tooltipData[0].tooltip">
+    </textarea>
+  </div>
+  <div style = " margin-left: 300px;height: 20px; width: 30px; color: lawngreen;">
+    <button style = "width: 150px; height: 40px; font-size: larger;background-color: seagreen;color: maroon;"type="button" (click)="updateTooltip()" >Update</button>
+  </div>
+  </div>
+  <div>
+
+  </div>
+  </div>

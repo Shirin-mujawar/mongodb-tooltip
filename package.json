@@ -1,0 +1,16 @@
+{
+    "name": "student-web-api",
+    "description": "Student Web API",
+    "version": "1.0.0",
+    "main": "app.js",
+    "author": {
+    "name": "Shirin"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.12.5"
+    },
+    "engines": {
+        "node": "10.16.0"
+    }
+}

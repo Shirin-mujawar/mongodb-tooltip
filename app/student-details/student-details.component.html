@@ -1,0 +1,77 @@
+<!-- <body background-color:black>
+  <div style="margin-left: 20px; font-size: x-large;">
+    <br>
+    <div>
+      <button>Dropdown</button>
+      <div>
+        <a routerLink="/create-student">Create Student </a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+     <a routerLink="/create-student">Create Student</a>
+    <div ></div> -->
+
+<style>
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+</style>
+<br>
+<div style="margin-left: 100px;" class="dropdown">
+  <button class="dropbtn">Actions</button>
+  <div class="dropdown-content">
+    <a routerLink="/create-student">Create Student </a>
+    <a routerLink="/tooltip-details">Manage Tooltip </a>
+    <button value="Export Grids" click=exportButtonHandler()>Export Grids</button>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<ag-grid-angular
+#student_grid
+id="student_grid"
+style="width: 1500px;
+                    height: 500px;
+                    " class="ag-theme-alpine" domLayout="autoHeight" [rowData]="rowData"
+  [frameworkComponents]="frameworkComponents" [defaultColDef]="defaultColDef" [columnDefs]="columnDefs">
+
+</ag-grid-angular>
